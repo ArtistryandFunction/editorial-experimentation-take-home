@@ -1,27 +1,29 @@
 # catapi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+So I completed this project with [Angular](https://github.com/angular/angular) with Typescript. There were some pros and cons to this approach.
 
-## Development server
+## Pros
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Utlizing Angular, along with [Angular Material](https://github.com/angular/components) allowed me to get some basic design in with very little effort.
+* Utilzing Typescript allowed for static typing, reinforcing proper variable declaration, which therefore helped overall with reducing errors.
+* Angular is a self-contained app framework, so you can run it locally out of the box.
+* Angular has great out of the box boilerplate, including:
+    * your choice of css, scss, sass
+    * unit test set up with [jasmine](https://angular.io/guide/testing)
+    * routing
+    * multiple environment configs
 
-## Code scaffolding
+## Cons
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* You are at the mercy of the frameworks you use in regards to customizing designs and workarounds for functionality
+* Sometimes straightforward tasks became annoyingly complicated (utilizing an `Observer` to `subscribe` to a data stream????)
+* Using frameworks are great for rapid prototyping, but may cuase issues when intergating with production code that doesn't use the same framework (although I would argue that using an abtracted API middleware would aleviate this)
+* Learning the framework and all of its quirks
 
-## Build
+## Improvements
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+I didn't get to fully unit test this. The tests in the spec file are what was generated from the boilerplate. I also think its super ugly lol.
 
-## Running unit tests
+## Overall Thoughts
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I'm curious to see how building the application in the team will translate to moving it to the core technology team. Deciding how to build something and thinking about scalability outside of your own purview is always tricky. I'm also not married to having to use any one technology or framework for our work. Alot of this was me deiding to do it so I can get better at using Angular in an app like this.
