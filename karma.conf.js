@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/launchx'),
+      dir: require('path').join(__dirname, './coverage/catapi'),
       subdir: '.',
       reporters: [
         { type: 'html' },
